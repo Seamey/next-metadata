@@ -5,11 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import menu from "./Menu";
+import path from "path";
 
 export default function NavbarComponent() {
   const pathname = usePathname();
-  if (pathname.includes("/dashboard")) return null;
-  else
+  // if (pathname.includes("/dashboard")) return null;
+  // else
+  if(pathname === "/login"|| pathname === "/signup") return null;  // mean if goto page login or signup don't show navbar
     return (
       <Navbar className="bg-blue-200">
         <NavbarBrand>
@@ -37,7 +39,8 @@ export default function NavbarComponent() {
         </NavbarContent>
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
-            <Link href="#">Login</Link>
+          <Button as={Link}  href="/login" variant="flat">
+            Login</Button>
           </NavbarItem>
           <NavbarItem>
             <Button as={Link} color="primary" href="/dashboard" variant="flat">

@@ -6,7 +6,9 @@ import { HiArrowSmRight, HiChartPie, HiInbox, HiShoppingBag, HiTable, HiUser, Hi
 
 export default function DashboardSidebar() {
   return (
+    
     <Sidebar className='min-h-screen' aria-label="Default sidebar example">
+      
       <Sidebar.Items>
         <Sidebar.ItemGroup>
           <Sidebar.Item href="#" icon={HiChartPie}>

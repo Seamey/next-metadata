@@ -1,7 +1,7 @@
 "use client"
 import React from 'react';
-import CardComponent2 from '@/components/cards/CardComponent2';
-import { ProductType2 } from '@/types/product2';
+import CardComponent2 from '@/components/cards/CardProductComponent';
+import { ProductType2 } from '@/types/products';
 import LoadingComponent from './loading';
 import { Suspense } from 'react';
 

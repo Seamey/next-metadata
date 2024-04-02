@@ -1,9 +1,9 @@
 "use client"
 import React from "react";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
-import { ProductType2 } from "@/types/product2";
+import { ProductType2 } from "@/types/products";
 
-export default function CardComponent2({ title, image }: ProductType2) {
+export default function CardProductComponent({ title, image }: ProductType2) {
   return (
     <Card className="py-4 w-auto">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">

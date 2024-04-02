@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 };
 
 async function fetchProduct() {
-  const product = await fetch("https://dummyjson.com/products?limit=100", {
+  const product = await fetch("https://dummyjson.com/products?limit=10", {
     // cache: "no-store", won't store your cache
     //refresh up your cache every 30s
     // next: {

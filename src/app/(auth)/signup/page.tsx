@@ -1,5 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next';
+import RegisterForm from '@/components/RegisterForm';
 
 export const metadata: Metadata = {
   title: "SignUp",
@@ -9,9 +10,9 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-   <>
-   Sign Up
-   </>
+    <div className='flex h-screen bg-slate-300 justify-center items-center'>
+      <RegisterForm/>
+    </div>
   )
 }
 

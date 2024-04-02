@@ -15,5 +15,6 @@ const menu = [
         title : "Store",
         path : "/store"
     }
+    
 ]
 export default menu;
